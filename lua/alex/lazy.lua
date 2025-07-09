@@ -12,7 +12,8 @@ require("lazy").setup({
     -- your plugins here
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
     { "nvim-lualine/lualine.nvim" },
-    { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
-    {"folke/tokyonight.nvim", lazy = false, priority = 1000,},
+    { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope-project.nvim" } },
+    {"folke/tokyonight.nvim", lazy = false, priority = 1000, },
+    {"neovim/nvim-lspconfig" },
 })
 
