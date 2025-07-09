@@ -23,3 +23,29 @@ vim.keymap.set(
     builtin.help_tags,
     { desc = "Help Tags" }
 )
+-- nvim-tree bindings
+vim.keymap.set(
+    "n",
+    "<leader>sb",
+    ":NvimTreeToggle<CR>",
+    { desc = "Toggle File Explorer" }
+)
+vim.keymap.set("n", "<leader>tn", ":tabnew<CR>", { desc = "New Tab" })
+vim.keymap.set("n", "<leader>tc", ":tabclose<CR>", { desc = "Close Tab" })
+vim.keymap.set(
+    "n",
+    "<leader>tp",
+    ":tabprevious<CR>",
+    { desc = "Previous Tab" }
+)
+vim.keymap.set("n", "<leader>tf", ":tabnext<CR>", { desc = "Next Tab" })
+
+-- End of nvim-tree bindings
+-- Terminal bindings
+vim.keymap.set(
+    "t",
+    "<Esc>",
+    [[<C-\><C-n>]],
+    { desc = "Exit terminal mode" }
+)
+-- End of terminal bindings
